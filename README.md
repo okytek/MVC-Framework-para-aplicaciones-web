@@ -16,4 +16,5 @@ Controlador (Controller):
 Es la capa encargada de manejar las interacciones del usuario y coordinar las acciones entre el modelo y la vista.
 Recibe las solicitudes del usuario, procesa la lógica de negocio necesaria y selecciona la vista adecuada para presentar los resultados.
 Se encarga de mantener la coherencia entre el modelo y la vista, actuando como intermediario entre ellos.
+
 Esta plantilla básica proporciona una estructura inicial para organizar tu código siguiendo el patrón MVC. Sin embargo, es importante adaptarla según las necesidades específicas de tu proyecto y las tecnologías que estés utilizando. Al seguir este enfoque, podrás crear aplicaciones web más mantenibles, escalables y fáciles de entender para ti y para otros desarrolladores que trabajen en el proyecto.
