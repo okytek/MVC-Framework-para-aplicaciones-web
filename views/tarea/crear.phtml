@@ -1,0 +1,18 @@
+<h2>Crear tarea</h2>
+<form action="<?php echo ENLACE_APLICACION . "tarea/crear"; ?>" method="POST">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre">
+    <label for="descripcion">Descripción</label>
+    <textarea name="descripcion"></textarea>
+    <label for="fecha">Fecha</label>
+    <input type="date" name="fecha" value="<?php echo date("y-m-d"); ?>">
+    <label for="prioridad">Prioridad</label>
+    <input type="range" name="prioridad" min="0" max="10">
+    <label for="categoria">Categoría</label>
+    <select name="categoria_id">
+        <?php foreach ($this->categorias as $categoria) { ?>
+        <option value="<?php echo $categoria["id"]; ?>"><?php echo $categoria["nombre"]; ?></option>
+        <?php } ?>
+    </select>
+    <input type="submit">
+</form>
